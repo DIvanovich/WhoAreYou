@@ -1,0 +1,66 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Who are you? Choose a psychotype.</title>
+		<!-- Подключаем шрифт -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Подключаем JS -->
+		<script type="text/javascript" src="script/js.js"></script>
+		<!-- Кодировка страницы -->
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<div class="content"> 		
+			<div class="header_links">
+				<div class="header-row">
+					<div class="header_links_item">
+						<a href="choleric-desc.html"><img src="img/choleric-icon.png" alt="Холерик, Кто ты?"></a>
+					</div>
+					<div class="header_links_item">
+						<a href="phlegmatic-desc.html"><img src="img/phlegmatic-icon.png"></a>
+					</div>
+					<div class="header_links_item">
+						<a href="melancholic-desc.html"><img src="img/melancholic-icon.png"></a>
+					</div>
+					<div class="header_links_item">
+						<a href="sanguine-desc.html"><img src="img/sanguine-icon.png"></a>
+					</div>
+				</div>
+			</div>
+			<div class="content-up">
+				<div class="content-up-title">Who are You?</div>
+				<h1 class="content-up-text">
+					Now we'll know about everything :)	
+                </h1>	
+                <form action="#1" class="test">
+                    <input type="text" placeholder="Name" required>
+                    <input type="age" placeholder="Age" required>
+                    <input type="submit" value="Start">
+                </form>
+
+            <div class="content-text">
+                <h2 class="content-up-text">
+                    Questions:
+                </h2>
+            <form action="#2" class="test">
+                <p><b>What do you like more?</b></p>
+                <p><input type="radio" name="answer" value="a1">McDonalds<Br>
+                <input type="radio" name="answer" value="a2"> Restaurant<Br>
+                <p><input type="submit"></p>
+             </form>
+            <hr> 
+			</div>
+            </div>
+		</div>
+        <div class="footer">
+            <p>There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+        </div>
+	</body>
+</html>

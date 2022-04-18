@@ -30,8 +30,9 @@ h2{
 }
 
 hr {
+	margin: 10px;
     border: none;
-    height: 3px;
+    height: 2px;
     background-image: linear-gradient(to right, #e8e8e8, #80b7b3, #e8e8e8);
 }
 
@@ -232,8 +233,9 @@ hr {
 	float: center;
 }
 
-.test p{
-	margin: 20px 0px 20px 0px;
+.Question {
+	margin: 20px 0px 10px 0px;
+	
 }
 .test input[type="text"],
 .test input[type="age"] {
@@ -243,13 +245,3 @@ hr {
 	border-radius: 5px;
 	outline: none;
 }
-.test input[type="submit"] {
-	padding: 5px 15px;
-	border: 1px solid lightgrey;
-	border-radius: 5px;
-}
-.test input[type="submit"]:hover,button:hover {
-	background-color: darkgrey;
-	color: white;
-}
-

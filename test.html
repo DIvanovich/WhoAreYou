@@ -6,8 +6,7 @@
 	<head>
 		<!-- Заголовок страницы в браузере -->
 		<title>Who are you? Choose a psychotype.</title>
-        <!-- Подключаем JS -->
-		<script type="text/javascript" src="js/js.js"></script>
+
 		<!-- Подключаем шрифт -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<!-- Подключаем CSS -->
@@ -43,10 +42,10 @@
                 <h2 class="content-up-text">
                     Questions:
                 </h2>
-            <form class="test">
+            <form name="mainForm" class="test" id="form-1">
                 <div>
                     <input type="text" name="Name" placeholder="Name" required>
-                    <input type="age" name="age" placeholder="Age" required>
+                    <input type="age" name="Age" placeholder="Age" id="age" required >
                 </div>
                 <div class="Question">
                     <b>What do you like more?</b>
@@ -79,7 +78,7 @@
                     <b>What do you prefer to drink?</b>
                 </div>
                 <div>
-                    <input type="radio" name="drink" value="c1" checked>Tea<Br>
+                    <input type="radio" id="radio-1" name="drink" value="c1" checked>Tea<Br>
                     <input type="radio" name="drink" value="c2">Coffee<Br>
                     <input type="radio" name="drink" value="c3">Juice<Br>
                     <input type="radio" name="drink" value="c4">Bear<Br>
@@ -100,4 +99,6 @@
             <p>There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
         </div>
 	</body>
+            <!-- Подключаем JS -->
+		<script type="text/javascript" src="js/js.js"></script>
 </html>

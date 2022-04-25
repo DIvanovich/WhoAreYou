@@ -42,20 +42,20 @@
                 <h2 class="content-up-text">
                     Questions:
                 </h2>
-            <form name="mainForm" class="test" id="form-1">
+            <form name="mainForm" class="test" id="form-1" onsubmit="return checkSend(this)">
                 <div>
                     <input type="text" name="Name" placeholder="Name" required>
-                    <input type="age" name="Age" placeholder="Age" id="age" required >
+                    <input type="number" name="Age" placeholder="Age" id="age" required >
                 </div>
                 <div class="Question">
                     <b>What do you like more?</b>
                 </div>
                 <div>
                     <div>
-                        <input type="radio" name="Food" value="a1" checked>McDonalds
+                        <input type="radio" name="Food" value="McDonalds" checked>McDonalds
                     </div>
                     <div>
-                        <input type="radio" name="Food" value="a2">Restaurant
+                        <input type="radio" name="Food" value="Restaurant">Restaurant
                     </div>
                 </div>           
                 <hr> 
@@ -64,13 +64,13 @@
                 </div>
                 <div>
                     <div>
-                        <input type="radio" name="pet" value="b1" checked>Cat
+                        <input type="radio" name="pet" value="Cat" checked>Cat
                     </div>
                     <div>
-                        <input type="radio" name="pet" value="b2">Dog
+                        <input type="radio" name="pet" value="Dog">Dog
                     </div>
                     <div>
-                        <input type="radio" name="pet" value="b3">Snail
+                        <input type="radio" name="pet" value="Snail">Snail
                     </div>
                 </div>
                 <hr> 
@@ -79,9 +79,9 @@
                 </div>
                 <div>
                     <input type="radio" id="radio-1" name="drink" value="c1" checked>Tea<Br>
-                    <input type="radio" name="drink" value="c2">Coffee<Br>
-                    <input type="radio" name="drink" value="c3">Juice<Br>
-                    <input type="radio" name="drink" value="c4">Bear<Br>
+                    <input type="radio" name="drink" value="Coffee">Coffee<Br>
+                    <input type="radio" name="drink" value="Juice">Juice<Br>
+                    <input type="radio" name="drink" value="Beer">Beer<Br>
                 </div>
                 <hr>
                 <div><b>What do you choose?</b></div>
@@ -93,11 +93,32 @@
                 <!--<div><button type="submit">Check</button>-->
                 <input type="submit" class="content-main-button_link" value="Start" id="sendform"> 
             </form>
-            </div>
+        </div>
+        <div class="content-result">
+            <div class="content-up">
+				<div class="content-up-title">Results:</div>
+				<h2 class="content-up-text">
+					Temperament is active, movable and cheerful...
+				</h2>	
+				<div class="content-image">	
+					<img src="img/brain.jpg"	alt="Кто ты?">
+				</div>
+			</div>
+			<div class="content-main">
+				<div class="content-main-result">
+					<p class="ResultHTML"></p>
+					<p></p>
+					<p></p>
+			    </div>
+            </div> 
 		</div>
         <div class="footer">
             <p>There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
         </div>
+
+
+               
+            
 	</body>
             <!-- Подключаем JS -->
 		<script type="text/javascript" src="js/js.js"></script>

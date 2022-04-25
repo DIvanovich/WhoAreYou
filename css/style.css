@@ -117,11 +117,11 @@ hr {
 	max-width: 850px;
 }
 
-.content-main-text p{
+.content-main-text, .content-main-result p{
 	margin: 0px 0px 20px 0px;
 }
 
-.content-main-text p:last-child{
+.content-main-text, .content-main-result p:last-child{
 	margin: 0px 0px 35px 0px;
 }
 
@@ -238,10 +238,14 @@ hr {
 	
 }
 .test input[type="text"],
-.test input[type="age"] {
+.test input[type="number"] {
 	padding: 5px;
 	margin-right: 5px;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	outline: none;
+}
+
+.content-result{
+	/*display: none;*/ /*for display results tests*/
 }

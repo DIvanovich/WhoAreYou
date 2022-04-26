@@ -24,7 +24,7 @@ function checkSend (el) {
     console.log(ResultsData);
 
     document.querySelector('.content-result').style.display = 'inline-block';
-    // document.body.style.display
+
 //***** Analysis answers
     let hol = 0;
     let fle = 0;
@@ -35,7 +35,7 @@ function checkSend (el) {
     let ResultsHtml_1 = "<p>Уважаемый," + ResultsData.name + "!</p>";
 
     if (5 > ResultsData.age || ResultsData.age > 90 ) {
-        ResultsHtml_1 += "<p>У Вас есть чувство юмора :)</p>";
+        ResultsHtml_1 += "<p>У Вас присутствует чувство юмора :)</p>";
         san += 1;
         hol += 1;
     }
@@ -96,10 +96,7 @@ function checkSend (el) {
         fle += 1;
     }    
 
-
 //***** Analysis type
-
-    
 
     if (san >= hol & san >= fle & san >= mel) {
         TemperHtml += "Temperament is active, movable and cheerful...";
@@ -120,16 +117,13 @@ function checkSend (el) {
     }    
 
     
-    ResultsHtml_1 += "<p>Поздравляем, похоже, Вы - " + TemperHtml_2 + " :)</p><p>Мы не претендуем на медицинкие определения, мы с Вами вместе просто немного улыбнулись).</p><p>Хорошего дня!</p>";
+    ResultsHtml_1 += "<p>Поздравляем, похоже, Вы - " + TemperHtml_2 + "! </p><p>Мы не претендуем на медицинкие определения, мы с Вами вместе просто немного улыбнулись).</p><p>Хорошего дня!</p>";
 
     console.log(ResultsHtml_1);
     
-    document.querySelector('.ResultHTML').innerHTML += ResultsHtml_1;
-    document.querySelector('h3').innerHTML += TemperHtml;
-    // document.querySelector('.TypeImg').src="img/sanguine-icon.png";
+    document.querySelector('.ResultHTML').innerHTML = ResultsHtml_1;
+    document.querySelector('h3').innerHTML = TemperHtml;
     
-
-
     return false;
 }
 

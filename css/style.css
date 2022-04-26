@@ -20,6 +20,7 @@ body{
 	background-color: #e8e8e8;
 	font-family: Roboto Mono, "Helvetica Neue", Helvetica, sans-serif;  
 }
+
 a {
 	color: #80b7b3;
 }
@@ -29,11 +30,21 @@ h2{
 	padding: 35px;
 }
 
+/*------------------
 hr {
 	margin: 10px;
     border: none;
     height: 2px;
     background-image: linear-gradient(to right, #e8e8e8, #80b7b3, #e8e8e8);
+}
+--*/
+
+form {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	width:850px;
 }
 
 .content {
@@ -68,7 +79,6 @@ hr {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-/*	flex: 0, 0, 130px;*/
 	width:130px;
 }
 
@@ -103,7 +113,7 @@ hr {
 	padding: 25px 0px 35px 0px;
 }
 
-.content-main {
+.content-main, .content-result {
 	color: #273d46;
 	font-size: 20px;
 }
@@ -117,12 +127,12 @@ hr {
 	max-width: 850px;
 }
 
-.content-main-text, .content-main-result p{
-	margin: 0px 0px 20px 0px;
+.content-main-text p{
+	margin: 10px 0px 20px 10px;
 }
 
-.content-main-text, .content-main-result p:last-child{
-	margin: 0px 0px 35px 0px;
+.content-main-text p:last-child{
+	margin: 10px 0px 35px 10px;
 }
 
 .content-main-bottom {
@@ -222,11 +232,11 @@ hr {
 	color: #273d46;
 	font-size: 14px;
 	letter-spacing: 2px;
-	padding: 35px 0px 25px 0px;
+	padding: 35px 10px 25px 10px;
 	max-width: 850px;
 	margin: 0px auto;
+	text-align: left;
 }
-
 
 .test {
 	padding: 15px 0;
@@ -248,4 +258,13 @@ hr {
 
 .content-result {
 	display: none; /*for display results tests*/
+	text-align: center;
 }
+
+ /*---------- Just Do It:
+ put in order languages
+ create styles for radio's in form with the pictures
+ add checker input name
+ use distruct in data from test form  
+ use Event
+ -------------*/

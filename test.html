@@ -6,7 +6,6 @@
 	<head>
 		<!-- Заголовок страницы в браузере -->
 		<title>Who are you? Choose a psychotype.</title>
-
 		<!-- Подключаем шрифт -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<!-- Подключаем CSS -->
@@ -38,16 +37,18 @@
 				<h1 class="content-up-text">
 					Now we'll know about everything :)	
                 </h1>	
+            </div>
             <div class="content-text">
                 <h2 class="content-up-text">
                     Questions:
                 </h2>
+            </div>    
             <form name="mainForm" class="test" id="form-1" onsubmit="return checkSend(this)">
                 <div>
                     <input type="text" name="Name" placeholder="Name" required>
                     <input type="number" name="Age" placeholder="Age" id="age" required >
                 </div>
-                <div class="Question">
+                <div class="question">
                     <b>What do you like more?</b>
                 </div>
                 <div>
@@ -59,7 +60,7 @@
                     </div>
                 </div>           
                 <hr> 
-                <div class="Question">
+                <div class="question">
                     <b>Who is the best pet?</b>
                 </div>
                 <div>
@@ -74,7 +75,7 @@
                     </div>
                 </div>
                 <hr> 
-                <div class="Question">
+                <div class="question">
                     <b>What do you prefer to drink?</b>
                 </div>
                 <div>
@@ -93,32 +94,28 @@
                 <!--<div><button type="submit">Check</button>-->
                 <input type="submit" class="content-main-button_link" value="Start" id="sendform"> 
             </form>
+            <div class="content-result">
+                <div class="content-up">
+                    <div class="content-up-title">Results:</div>
+                    <h3 class="content-up-text">
+                    </h3>	
+                    <div class="content-image">	
+                        <img class="TypeImg" src="img/brain.jpg" alt="Кто ты?">
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-main-text">
+                        <p class="ResultHTML"></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div> 
+            </div>
         </div>
-        <div class="content-result">
-            <div class="content-up">
-				<div class="content-up-title">Results:</div>
-				<h3 class="content-up-text">
-				</h3>	
-				<div class="content-image">	
-					<img class="TypeImg" src="img/brain.jpg" alt="Кто ты?">
-				</div>
-			</div>
-			<div class="content-main">
-				<div class="content-main-result">
-					<p class="ResultHTML"></p>
-					<p></p>
-					<p></p>
-			    </div>
-            </div> 
-		</div>
         <div class="footer">
             <p>There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
-        </div>
-
-
-               
-            
+        </div>        
 	</body>
-            <!-- Подключаем JS -->
-		<script type="text/javascript" src="js/js.js"></script>
+    <!-- Подключаем JS -->
+	<script type="text/javascript" src="js/js.js"></script>
 </html>

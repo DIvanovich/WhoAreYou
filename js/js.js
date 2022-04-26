@@ -11,7 +11,6 @@ function checkSend (el) {
     const form = document.forms.mainForm;
     console.log(form);
     console.log(form.Food.value);
-
     
     const {name, age, food, pet, drink, move} = form;
         let ResultsData = { 
@@ -23,14 +22,17 @@ function checkSend (el) {
             move: form.move.value
         }
     console.log(ResultsData);
-    
+
+    document.querySelector('.content-result').style.display = 'inline-block';
+    // document.body.style.display
 //***** Analysis answers
     let hol = 0;
     let fle = 0;
     let mel = 0;
     let san = 0;
+    let TemperHtml = "";
 
-    let ResultsHtml_1 = "<p>Dear," + ResultsData.name + "!</p>";
+    let ResultsHtml_1 = "<p>Уважаемый," + ResultsData.name + "!</p>";
 
     if (5 > ResultsData.age || ResultsData.age > 90 ) {
         ResultsHtml_1 += "<p>У Вас есть чувство юмора :)</p>";
@@ -53,47 +55,79 @@ function checkSend (el) {
     }
 
     if (ResultsData.pet == "Cat") {
-        ResultsHtml_1 += "<p>Вы ответственный и заботливый нежный человек</p>";
+        ResultsHtml_1 += "<p>Вы ответственный и заботливый нежный человек.</p>";
         fle += 1;
         san += 1;
     } else if (ResultsData.pet == "Dog") {
-        ResultsHtml_1 += "<p>Вы ответственный и надёжный друг, на которого всегда можно положиться</p>";
+        ResultsHtml_1 += "<p>Вы ответственный и надёжный друг, на которого всегда можно положиться.</p>";
         mel += 1;
     } else { 
-        ResultsHtml_1 += "<p>Вы готовы принять заботу о себе, но не готовы тратить время на других</p>";
+        ResultsHtml_1 += "<p>Вы готовы принять заботу о себе, но не готовы тратить время на других.</p>";
         hol += 1;
     }
 
-    if (ResultsData.drink == "Coffee") {
+    if (ResultsData.drink == "Tea") {
+        ResultsHtml_1 += "<p>Вы предпочетаете традиционный отдых в спокойной отмосфере.</p>";
+        fle += 1;
+        mel += 1;
+    } else if (ResultsData.pet == "Coffee") {
         ResultsHtml_1 += "<p>Вы предпочетаете поспать, что бы приступить к делу с новыми силами.</p>";
         fle += 1;
         hol += 1;
+        san += 1;
     } else if (ResultsData.pet == "Juice") {
         ResultsHtml_1 += "<p>Вы выступаете за здоровый образ жизни.</p>";
         mel += 1;
     } else { 
-        ResultsHtml_1 += "<p>Ваша натура требует хорошую компанию для хорошего отдыха</p>";
+        ResultsHtml_1 += "<p>Ваша натура требует хорошую компанию для хорошего отдыха.</p>";
         hol += 1;
         san += 1;
     }
 
     if (ResultsData.move == "Kedy") {
-        ResultsHtml_1 += "<p>Вы думаете о своём теле и оно Вас долго будет радрвать своей надежностью.</p>";
+        ResultsHtml_1 += "<p>Вы думаете о своём теле и оно Вас долго будет радовать своей надежностью.</p>";
         mel += 1;
     } else if (ResultsData.pet == "Bike") {
         ResultsHtml_1 += "<p>Вы готовы приобщиться к хорошему делу, если оно не сильно обременительно.</p>";
         san += 1;
     } else { 
-        ResultsHtml_1 += "<p>Вы предпочитаете все делать быстро и без лишних прелюдий</p>";
+        ResultsHtml_1 += "<p>Вы предпочитаете все делать быстро и без лишних прелюдий.</p>";
         hol += 1;
         fle += 1;
     }    
 
-    ResultsHtml_1 += "<p></p><p>Мы не претендуем на медицинкие определения, мы с Вами вместе просто немного улыбнулись). </p><p>Хорошего дня!</p>";
+
+//***** Analysis type
+
+    
+
+    if (san >= hol & san >= fle & san >= mel) {
+        TemperHtml += "Temperament is active, movable and cheerful...";
+        document.querySelector('.TypeImg').src="img/sanguine-icon.png";
+        TemperHtml_2 = "Сангвиник";
+    } else if ( fle >= hol & fle >= mel) {
+        TemperHtml += "Темперамент спокойный, неспешный, невозмутимый...";
+        document.querySelector('.TypeImg').src="img/phlegmatic-icon.png";
+        TemperHtml_2 = "Флегматик";
+    } else if ( hol >= mel) {
+        TemperHtml += "Темперамент неуравновешенный и вспыльчивый...";
+        document.querySelector('.TypeImg').src="img/choleric-icon.png";
+        TemperHtml_2 = "Холерик";
+    } else { 
+        TemperHtml += "Темперамент впечатлительный и ранимый...";
+        document.querySelector('.TypeImg').src="img/melancholic-icon.png";
+        TemperHtml_2 = "Меланхолик";
+    }    
+
+    
+    ResultsHtml_1 += "<p>Поздравляем, похоже, Вы - " + TemperHtml_2 + " :)</p><p>Мы не претендуем на медицинкие определения, мы с Вами вместе просто немного улыбнулись).</p><p>Хорошего дня!</p>";
 
     console.log(ResultsHtml_1);
-
+    
     document.querySelector('.ResultHTML').innerHTML += ResultsHtml_1;
+    document.querySelector('h3').innerHTML += TemperHtml;
+    // document.querySelector('.TypeImg').src="img/sanguine-icon.png";
+    
 
 
     return false;

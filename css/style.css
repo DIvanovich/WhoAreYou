@@ -233,7 +233,7 @@ hr {
 	float: center;
 }
 
-.Question {
+.question {
 	margin: 20px 0px 10px 0px;
 	
 }
@@ -246,6 +246,6 @@ hr {
 	outline: none;
 }
 
-.content-result{
-	/*display: none;*/ /*for display results tests*/
+.content-result {
+	display: none; /*for display results tests*/
 }

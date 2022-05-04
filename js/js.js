@@ -182,3 +182,49 @@ function checkSend (el) {
 //     console.log('work');
 // }
 
+
+
+//******Langueges*****//
+
+
+
+// <html lang="ru"> => en . uk
+
+let selectLang = document.getElementById("langChange");
+
+console.log(selectLang);
+
+selectLang.addEventListener('change', changeLang);
+
+function changeLang (){
+    let lang = selectLang.value;
+    let langEng = document.querySelectorAll('.ENG');
+    let langUkr = document.querySelectorAll('.UKR');
+    let langRus = document.querySelectorAll('.RUS');
+
+
+    switch (lang){
+        case "EN":
+            for (i = 0; i < langEng.length; i++) {
+                langEng[i].style.display = "inherit";
+                langUkr[i].style.display = "none";
+                langRus[i].style.display = "none";
+              }        
+            break;
+        case "UA":
+            for (i = 0; i < langEng.length; i++) {
+                langEng[i].style.display = "none";
+                langUkr[i].style.display = "inherit";
+                langRus[i].style.display = "none";
+              }
+            break;
+        case "RU":
+            for (i = 0; i < langEng.length; i++) {
+                langEng[i].style.display = "none";
+                langUkr[i].style.display = "none";
+                langRus[i].style.display = "inherit";
+              }
+            break;    
+    }
+}
+

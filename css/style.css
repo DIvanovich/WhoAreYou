@@ -39,12 +39,35 @@ hr {
 }
 --*/
 
+#langChange {
+	display: block;
+	right: 0px;
+	position: absolute;
+	padding: 10px 10px ;
+	background-color:#80b7b3;
+	transition-duration: 0.4s;
+	border-radius: 20px;
+	box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+}
+
+#langChange:hover {
+	background-color:#41a0a1;
+}
+
 form {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
-	width:850px;
+	max-width:850px;
 }
 
 .content {
@@ -225,7 +248,7 @@ form {
 	display: inline-block;
 	padding: 0px 30px;
 	height: 44px;
-	background-color:#80b7b3;
+	background-color:#80b7b3; 
 	border-radius: 20px;
 	box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
@@ -268,7 +291,7 @@ form {
 .answers-block-grid {
 	display: inline-grid;
 	grid-template-columns: repeat(4, auto);
-	
+	grid-area: side;
     box-sizing: border-box;
     grid-gap: 20px;
     margin: 20px auto;
@@ -406,18 +429,6 @@ form {
     transform: scale(1.2);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
 	top: -23px;
 	opacity: 0.6;
@@ -457,11 +468,28 @@ form {
 	text-align: center;
 }
 
+.ENG {
+	display: inherit;
+}
+
+.RUS {
+	display: none;
+}
+
+.UKR {
+	display: none;
+}
 
  /*---------- Just Do It:
- put in order languages
- create styles for radio's in form with the pictures
+ put in changer languages -
+  	1) - Add massive in JS, Replace by innerHTML
+	2) - Add span to all texts for change, in JS add cycle for find All spans, => classes display:none.
+	* if need change <html lang="en"> => can use outerHTML
+
+
+ create styles for radio's in form with the pictures ^
  add checker input name
- use distruct in data from test form  
- use Event
+ try use distruct in data from test form  
+ try use Event
+
  -------------*/

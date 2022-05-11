@@ -1,26 +1,24 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html>
 	<head>
-		<title>Меланхолик. А кто ты? Выбирай себе психотип.</title>
-		<script type="text/javascript" src="js/js.js"></script>
+		<title>Melancholic, Who are you?</title>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>							
-		<div class="content"> 
-			<div class="header">
-				<div class="content-header">					
-					<a href="index.html" class="content-header-button_link">
-						<span>На главную</span>
-					</a>
-				</div>	
-			</div>
+		<div class="content">
+				<select id="langChange">
+					<option value="EN" selected>EN</option>
+					<option value="UA">UA</option>
+					<option value="RU">RU</option>
+				</select>						
+				<a href="index.html" class="content-header-button_link">
+					<span class="ENG"> Home</span>
+					<span class="UKR"> На головну</span>
+					<span class="RUS"> На главную</span>
+				</a>	
 			<div class="header_links">
 				<div class="header-row">
 					<div class="header_links_item">
@@ -39,45 +37,83 @@
 			</div>
 			<div class="content-up">
 				<div class="content-up-title">Melancholic-?</div>
-				<h1 class="content-up-text">
-					Темперамент впечатлительный и ранимый...
-				</h1>	
+				<h1 class="ENG content-up-text">Impressionable and vulnerable...</h1>	
+				<h1 class="UKR content-up-text">Темперамент вразливий та ранимий...</h1>	
+				<h1 class="RUS content-up-text">Темперамент впечатлительный и ранимый...</h1>	
+				
 				<div class="content-image">	
 					<img src="img/brain.jpg"	alt="Кто ты?">
 				</div>
 			</div>
 			<div class="content-main">
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>Melancholic is a person who deeply experiences any events taking place with him and around him.</p>
+					<P>Features of the psyche of melancholics make them lethargic, they quickly get tired and cannot fully enjoy life.</p>
+					<p>That's why melancholics are sad most of the time.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Меланхолік - це людина, яка глибоко переживає будь -які події, що відбуваються з ним і навколо нього.</p>
+					<p>Особливості психіки меланхолії роблять їх млявими, вони швидко втомлюються і не можуть повністю насолоджуватися життям.</p>
+					<p>Ось чому меланхоліси більшість часу сумні.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Меланхолик - это человек, который глубоко переживает любые события, происходящие с ним и вокруг него.</p>
-					<p>Особенности психики меланхоликов делают их вялыми, они быстро утомляются и не могут полноценно радоваться жизни. </p>
-					<p>Вот почему меланхолики грустные большую часть времени.</p>	
+					<p>Особенности психики меланхоликов делают их вялыми, они быстро утомляются и не могут полноценно радоваться жизни.</p>
+					<p>Вот почему меланхолики грустные большую часть времени.</p>
 				</div>
 				<div class="content-image">	
 				<img src="img/melancholic-desc.jpg"	alt="Кто ты? Меланхолик?">
 				</div>
-				<div class="content-main-text">
-					<p>В бытовой жизни, при серьезных разговорах, ссорах решению проблем будет помогать их уступчивость, компромиссность и душевная доброта.</p>
-					<p> Совет меланхоликам - не быть слишком обидчивыми и ранимыми, а также говорить о проблемах своей половинке напрямую, ничего не скрывая и не тая в себе.</p>
+				<div class="ENG content-main-text">
+					<p>In household life, in serious conversations, quarrels, will help solve problemstheir concessions, compromise and spiritual kindness.</p>
+					<p>Council for melancholics - not to be too touchy and vulnerable, as well as to talk about the problems of their soul mate directly, without hiding anything and without melting in yourself.</p>
 				</div>
-				<h2 class="content-up-text">
+				<div class="UKR content-main-text">
+					<p>У домашньому житті, у серйозних розмовах, сварках вирішенню проблем допоможуть їхні поступливість, компромісність та духовна доброта.</p> 
+					<p>Поради меландоллікам - не бути занадто образливим та вразливими, а також говорити про проблеми їхній половинці безпосередньо, не приховуючи нічого в собі.</p>
+				</div>
+				<div class="RUS content-main-text">
+					<p>В бытовой жизни, при серьезных разговорах, ссорах решению проблем будет помогать их уступчивость, компромиссность и душевная доброта.</p>
+					<p>Совет меланхоликам - не быть слишком обидчивыми и ранимыми, а также говорить о проблемах своей половинке напрямую, ничего не скрывая и не тая в себе.</p>
+				</div>
+				<h2 class="ENG content-up-text">
+					Famous melancholic persons:
+				</h2> 
+				<h2 class="UKR content-up-text">
+					Відомі люди - меланхолики:
+				</h2> 
+				<h2 class="RUS content-up-text">
 					Знаменитые люди - меланхолики:
 				</h2> 
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>Among the melancholics, we can find out such famous people as (in the photo from left to right): </p>
+					<p>Edgar Poe, Isaac Newton, Charles Darwin, Michael Jackson. Fedor Dostoevsky, Nikolai Gogol, Peter Tchaikovsky, Sergey Yesenin.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Серед меланхоліків ми можемо впізнати таких відомих людей (на фотографії зліва направо): </p>
+					<p>Едгар По, Ісаак Ньютон, Чарльз Дарвін, Майкл Джексон. Федор Достоєвський, Ніколая Гоголь, Петро Чайковський, Сергій Єсенін.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Среди меланхоликов мы можем узнать таких знаменитых людей, как (на фото слева направо):</p>
-					<p> Эдгар Аллан По, Исаак Ньютон, Чарльз Роберт Дарвин, Майкл Джозеф Джексон. Фёдор Михайлович Достоевский, Николай Васильевич Гоголь, Пётр Ильич Чайковский, Сергей Александрович Есенин.</p>
+					<p>Эдгар Аллан По, Исаак Ньютон, Чарльз Роберт Дарвин, Майкл Джозеф Джексон. Фёдор Михайлович Достоевский, Николай Васильевич Гоголь, Пётр Ильич Чайковский, Сергей Александрович Есенин.</p>
 				</div>
 				<div class="content-image">	
 					<img src="img/melancholic-people.jpg"	alt="Кто ты? Меланхолик?">
 				</div>
 				<div class="content-main-bottom">					
 					<a href="test.html" class="content-main-button_link">
-					<span>Пройди тест</span>
+						<span class="ENG">Pass the test</span>
+						<span class="UKR">Пройди тест</span>
+						<span class="RUS">Пройди тест</span>
 					</a>
 				</div>				
 			</div>
 		</div>	
 		<div class="footer">
-			<p>There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не буемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
 		</div>
 	</body>
+	<script type="text/javascript" src="js/js.js"></script>
 </html>

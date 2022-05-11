@@ -191,9 +191,7 @@ function checkSend (el) {
 // <html lang="ru"> => en . uk
 
 let selectLang = document.getElementById("langChange");
-
-console.log(selectLang);
-
+changeLang ();
 selectLang.addEventListener('change', changeLang);
 
 function changeLang (){
@@ -209,7 +207,7 @@ function changeLang (){
                 langEng[i].style.display = "inherit";
                 langUkr[i].style.display = "none";
                 langRus[i].style.display = "none";
-              }        
+              }                  
             break;
         case "UA":
             for (i = 0; i < langEng.length; i++) {

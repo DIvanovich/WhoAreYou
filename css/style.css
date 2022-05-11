@@ -40,10 +40,11 @@ hr {
 --*/
 
 #langChange {
-	display: block;
+	display: inline-block;
 	right: 0px;
 	position: absolute;
 	padding: 10px 10px ;
+	margin: 20px 0px;
 	background-color:#80b7b3;
 	transition-duration: 0.4s;
 	border-radius: 20px;
@@ -74,13 +75,13 @@ form {
 	padding: 0 0 135px 0;
 	max-width: 850px;
 	margin: 0px auto;
+	position: relative;
 }
 
 .content-header{
 	position: relative;
 	text-align: left;
-	margin: 0px 0px 0px 0px;
-	padding: 20px 0px 80px 0;
+	padding: 0px 0px 80px 0;
 }
 
 .header-row{
@@ -90,7 +91,7 @@ form {
 	flex-wrap: nowrap;
 	max-width: 500px;
 	height: 120px;
-	margin: 25px;
+	margin: 55px 25px 25px 25px;
 }
 
 .header_links{
@@ -260,6 +261,10 @@ form {
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
 	transition-duration: 0.4s;
+}
+
+.content-header-button_link{
+	margin: 20px 0px 0px 0px;
 }
 
 .content-main-button_link span{

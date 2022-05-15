@@ -473,6 +473,15 @@ form {
 	text-align: center;
 }
 
+.content-image-mini{
+	padding: 0px 0px 35px 0px;
+	text-align: center;
+	}
+
+.content-image-mini img{
+	max-height: 150px;
+}
+
 .ENG {
 	display: inherit;
 }

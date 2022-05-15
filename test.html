@@ -1,19 +1,13 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html>
 	<head>
-		<!-- Заголовок страницы в браузере -->
 		<title>Who are you? Choose a psychotype.</title>
-		<!-- Подключаем шрифт -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-	</head>
-	<!-- Отображаемое тело страницы -->
+	    <link rel="shortcut icon" href="favicon.ico">
+</head>
+        
 	<body>
 		<div class="content">
             <select id="langChange">
@@ -22,8 +16,10 @@
 				<option value="RU">RU</option>
 			</select>	
             <a href="index.html" class="content-header-button_link">
-                <span>На главную</span>
-            </a>	
+                <span class="ENG"> Home</span>
+                <span class="UKR"> На головну</span>
+                <span class="RUS"> На главную</span>
+            </a>		
 			<div class="content-up">
                 <div class="header_links">
                     <div class="header-row">
@@ -42,25 +38,19 @@
                     </div>
                 </div>
 				<div class="content-up-title">Who are You?</div>
-				<h1 class="ENG content-up-text">
-					Now we'll know about everything :)	
-                </h1>
-                <h1 class="UKR content-up-text">
-					Зараз ми про все дізнаємось :)	
-                </h1>
-                <h1 class="RUS content-up-text">
-					Сейчас мы всё узнаем :)	
-                </h1>
+				<h1 class="ENG content-up-text">Now we'll know about everything :)</h1>
+                <h1 class="UKR content-up-text">Зараз ми про все дізнаємось :)</h1>
+                <h1 class="RUS content-up-text">Сейчас мы всё узнаем :)</h1>
             </div>
             <div class="content-text">
                 <h2 class="ENG content-up-text">
-                    Questions:
+                    Answer the Questions:
                 </h2>
                 <h2 class="UKR content-up-text">
-                    Questions:
+                    Позначте свої відповіді:
                 </h2>
                 <h2 class="RUS content-up-text">
-                    Questions:
+                    Обозначьте свои ответы на следующие вопросы:
                 </h2>
             </div>    
             <form name="mainForm" class="test" id="form-1" onsubmit="return checkSend(this)">
@@ -174,8 +164,6 @@
                 <div>
                     <input type="submit" class="content-main-button_link" value="Start" id="sendform">      
                 </div>
-                <!--<div><button type="submit">Check</button>-->
-                
             </form>
             <div class="content-result">
                 <div class="content-up">
@@ -183,20 +171,25 @@
                     <h3 class="content-up-text">
                     </h3>	
                     <div class="content-image">	
-                        <img class="TypeImg" src="img/brain.jpg" alt="Кто ты?">
+                        <img class="TypeImg" src="img/sanguine-cat.jpg">
                     </div>
                 </div>
                 <div class="content-main">
                     <div class="content-main-text">
                         <p class="ResultHTML"></p>
                     </div>
+                    <div class="content-image-mini">
+                        <img class="TypeImgMini" src="img/sanguine-cat.jpg">
+                    </div>
                 </div> 
             </div>
         </div>
         <div class="footer">
-            <p>There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
-        </div>        
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не будемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
+		</div>        
 	</body>
-    <!-- Подключаем JS -->
 	<script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
 </html>

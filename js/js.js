@@ -57,15 +57,13 @@ function changeLangData (){
 
     for (i = 0; i < LangLinks.length; i++) {
         let link = LangLinks[i].href;
-        console.log(link);
+        // console.log(link);
         LangLinks[i].href = link+'#'+langHash;
-        console.log(LangLinks[i].href);
-        console.log(langHash);
-        
-        
+        // console.log(LangLinks[i].href);
+        // console.log(langHash);                
     } 
     selectLang.value = langHash;
 
-    return selectLangValue = langHash;
+   // return selectLangValue = langHash;
     
 }

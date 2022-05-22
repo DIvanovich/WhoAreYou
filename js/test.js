@@ -421,7 +421,11 @@ function checkSend (el) {
 //     console.log('work');
 // }
 
+// let select = document.querySelector('#pets');
+
+// select.onchange = function () {
+//     console.log(select.value);
+// }
 
 
-//******Langueges*****//
 

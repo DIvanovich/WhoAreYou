@@ -1,28 +1,24 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html>
 	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>Меланхолик. А кто ты? Выбирай себе психотип.</title>
-		<!-- Подключаем шрифт -->
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-		<!-- Подключаем CSS -->
+		<title>Sanguine. Who is it?</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="favicon.ico">
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="content"> 
-			<div class="header">
-			<div class="content-header">					
-				<a href="index.html" class="content-header-button_link">
-					<span>На главную</span>
-				</a>
-			</div>
-		</div>
+			<select id="langChange">
+				<option value="EN" selected>EN</option>
+				<option value="UA">UA</option>
+				<option value="RU">RU</option>
+			</select>						
+			<a href="index.html" class="content-header-button_link">
+				<span class="ENG"> Home</span>
+				<span class="UKR"> На головну</span>
+				<span class="RUS"> На главную</span>
+			</a>	
 			<div class="header_links">
 				<div class="header-row">
 					<div class="header_links_item">
@@ -35,53 +31,90 @@
 						<a href="melancholic-desc.html"><img src="img/melancholic-icon.png"></a>
 					</div>
 					<div class="header_links_item">
-						<a href="sanguine-desc.html"><img src="img/sanguine-icon.png" style="opacity: 100%" alt="Сангвиник, Кто ты?"></a>
+						<a href="sanguine-desc.html"><img src="img/sanguine-icon.png" style="opacity: 100%" alt="Sanguinik, Who are You?"></a>
 					</div>
 				</div>		
 			</div>
 			<div class="content-up">
-				<div class="content-up-title">Sanguine-?</div>
-				<h1 class="content-up-text">
-					Темперамент живой, подвижный и веселый...
-				</h1>	
+				<div class="ENG content-up-title">Sanguinik-?</div>
+				<div class="UKR content-up-title">Сангвінік-?</div>
+				<div class="RUS content-up-title">Сангвиник-?</div>
+				<h1 class="ENG content-up-text">Temperament is active, movable and cheerful...</h1>
+				<h1 class="UKR content-up-text">Темперамент живий, рухливий та веселий...</h1>
+				<h1 class="RUS content-up-text">Темперамент живой, подвижный и веселый...</h1>
 				<div class="content-image">	
-					<img src="img/brain.jpg"	alt="Кто ты?">
+					<img src="img/brain.jpg" alt="Who are you?">
 				</div>
 			</div>
 			<div class="content-main">
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>Sanguine is a person whom can be described as a cheerful optimist, and, which is constantly in motion.</p>
+					<p>The peculiarity of the behavior of these people is is an by increased excitability. It makes them constantly be in the spotlight.</p>
+					<p>Sanguines are very responsive and friendly. They always have many friends and just familiar.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Сангвінік - це людина, яку можна охарактеризувати як життєрадісного оптиміста, і яка постійно рухається.</p>
+					<p>Особливість поведінки цих людей пояснюється підвищеною збудливістю. Це змушує їх постійно бути в центрі уваги.</p>
+					<p>Сангвініки дуже чуйні та доброзичливі. У них завжди багато друзів і просто знайомих.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Сангвиник - это человек, которого можно описать как жизнерадостного оптимиста, и, который постоянно находится в движении.</p>
 					<p>Особенность поведения этих людей, объясняется повышенной возбудимостью. Это заставляет их постоянно быть в центре внимания.</p>
 					<p>Сангвиники очень отзывчивы и дружелюбны. У них всегда много друзей и просто знакомых.</p>
 				</div>
 				<div class="content-image">	
-				<img src="img/sanguine-desc.jpg"	alt="Кто ты? Холерик?">
+				<img src="img/sanguine-desc.jpg" alt="Who are you? Sanguine?">
 				</div>
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>Sanguinik always has many friends and fans. He is a very responsive friend, but he has one drawback - he often gives promises, which can then not fulfill.</p>
+					<p>However, friends forgive this flaw of a cheerful and positive friend.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>У сангвініка завжди є багато друзів та шанувальників. Він дуже чуйний друг, але у нього є один недолік - він часто дає обіцянки, яких потім не може виконати.</p>
+					<p> Однак друзі прощають цей недолік веселого та позитивного друга.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>У сангвиника всегда много друзей и поклонников. Он очень отзывчивый друг, но у него есть один недостаток - он часто даёт обещания, которые затем не может выполнить.</p>
-					<p> Однако, друзья прощают этот недостаток жизнерадостному и позитивному другу.</p>
+					<p>Однако, друзья прощают этот недостаток жизнерадостному и позитивному другу.</p>
 				</div>
-
-				<h2 class="content-up-text">
-					Знаменитые люди - сангвиники:
+				<h2 class="ENG content-up-text">
+					Famous sanguine persons:
 				</h2> 
-
-				<div class="content-main-text">
+				<h2 class="UKR content-up-text">
+					Знамениті люди - сангвініки:
+				</h2>
+				<h2 class="RUS content-up-text">
+					Знаменитые люди - сангвиники:
+				</h2>
+				<div class="ENG content-main-text">
+					<p>Among the famous and well-known world people, are sanguine persons as:</p>
+					<p>Franklin Roosevelt, Ronald Reagan, Bill Clinton, Lionel Messi, Napoleon Bonaparte, Alexander Ivanovich Herzen, Pierre Boualersche, Magic Johnson and many others.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Серед відомих і впізнаваних у всьому світі людей, сангвініками були або є такі особи, як:</p>
+					<p>Франклін Рузвельт, Рональд Рейган, Білл Клінтон, Ліонель Мессі, Наполеон Бонапарт, Олександр Герцен, П'єр Бомарш, Магія Джонсон та багато інших.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Среди знаменитых и известных всему миру людей сангвиниками являлись или являются такие персоны, как:</p>
 					<p>Франклин Рузвельт, Рональд Рейган, Билл Клинтон, Лионель Месси, Наполеон Бонапарт, Александр Иванович Герцен, Пьер Бомарше, Мэджик Джонсон и многие другие.</p>
 				</div>
 				<div class="content-image">	
-					<img src="img/sanguine-people.jpg"	alt="А кто ты? Сангвиник?">
+					<img src="img/sanguine-people.jpg"	alt="So, who are you?">
 				</div>
 				<div class="content-main-bottom">					
-					<a target="_blank" href="test.html" class="content-main-button_link">
-						<span>Пройди тест</span>
+					<a href="test.html" class="content-main-button_link">
+						<span class="ENG">Pass the test</span>
+						<span class="UKR">Пройди тест</span>
+						<span class="RUS">Пройди тест</span>
 					</a>
 				</div>				
 			</div>
-			<div class="content-footer">
-				<p>Существуют ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
-			</div>
 		</div>	
+		<div class="footer">
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не будемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
+		</div>
 	</body>
+	<script type="text/javascript" src="js/js.js"></script>
 </html>

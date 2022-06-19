@@ -1,32 +1,28 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html>
 	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>Холерик. А кто ты? Выбирай себе психотип.</title>
-		<!-- Подключаем шрифт -->
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-		<!-- Подключаем CSS -->
+		<title>Choleric. So who are you?</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="favicon.ico">
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="content"> 
-			<div class="header">
-				<div class="content-header">					
-					<a href="index.html" class="content-header-button_link">
-						<span>На главную</span>
-					</a>
-				</div>	
-			</div>			
+			<select id="langChange">
+				<option value="EN" selected>EN</option>
+				<option value="UA">UA</option>
+				<option value="RU">RU</option>
+			</select>						
+			<a href="index.html" class="content-header-button_link">
+				<span class="ENG"> Home</span>
+				<span class="UKR"> На головну</span>
+				<span class="RUS"> На главную</span>
+			</a>			
 			<div class="header_links">
 				<div class="header-row">
 					<div class="header_links_item">
-						<a href="choleric-desc.html"><img src="img/choleric-icon.png" width="120px" style="opacity: 100%" alt="Холерик, Кто ты?"></a>
+						<a href="choleric-desc.html"><img src="img/choleric-icon.png" width="120px" style="opacity: 100%" alt="Choleric. So who are you?"></a>
 					</div>
 					<div class="header_links_item">
 						<a href="phlegmatic-desc.html"><img src="img/phlegmatic-icon.png"></a>
@@ -40,46 +36,85 @@
 				</div>
 			</div>
 			<div class="content-up">
-				<div class="content-up-title">Choleric?</div>
-				<h1 class="content-up-text">
-					Темперамент неуравновешенный и вспыльчивый...
-				</h1>	
+				<div class="ENG content-up-title">Choleric?</div>
+				<div class="UKR content-up-title">Холерик?</div>
+				<div class="RUS content-up-title">Холерик?</div>
+				<h1 class="ENG content-up-text">Temperment unbalanced and hot-tempered...</h1>
+				<h1 class="UKR content-up-text">Темперамент спокійний, неспішний, незрозумілий...</h1>
+				<h1 class="RUS content-up-text">Темперамент неуравновешенный и вспыльчивый...</h1>
 				<div class="content-image">	
-					<img src="img/brain.jpg"	alt="Кто ты? Холерик?">
+					<img src="img/brain.jpg" alt="Who are you? Choleric?">
 				</div>
 			</div>
 			<div class="content-main">
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>Choleric is an impulsive, rapid and passionate person with a sharply changing mood.</p>
+					<p>He also quickly loses interest in the affairs, especially if they do not bring immediate result.</p>
+					<p>Showing exorbitant activity, choleriks are quickly exhausting emotionally and physically.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Холерик - це імпульсивна, швидка та пристрасна людина з різко мінливим настроєм.</p>
+					<p>Він також швидко втрачає інтерес до справ, особливо якщо вони не приносять негайного результату.</p>
+					<p>Проявляючи непомірну діяльність, холерики швидко вичерпуються емоційно та фізично.</p>	
+				</div>
+				<div class="RUS content-main-text">
 					<p>Холерик — импульсивный, стремительный и страстный человек с резко меняющимся настроением.  </p>
 					<p>Так же быстро теряет интерес к начатым делам, особенно если они не приносят немедленного результата. </p>
 					<p>Проявляя непомерную активность, холерики быстро истощаются эмоционально и физически.</p>	
 				</div>
 				<div class="content-image">	
-				<img src="img/choleric-desc.jpg"	alt="Кто ты? Холерик?">
+				<img src="img/choleric-desc.jpg" alt="Who are you? Choleric?">
 				</div>
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>In the family, Choleric will also take on the whole initiative. Only a calm and balanced person can get along with him, ready to constantly be on the second roles and withstand the rhythm of life taken by their soulmate. </p>
+					<p> At the same time, he should be ready to endure the difficult and domineering character of the choleric.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>У сім'ї Холерик також візьме на себе всю ініціативу. Лише спокійна і врівноважена людина може ладити з ним, готова постійно бути на другорядних ролях і витримати ритм життя, прийнятий їх душею.</p>
+					<p>У той же час він повинен бути готовий терпіти складний і домінуючий характер холерика.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>В семье холерик будет также брать на себя всю инициативу. C ним может ужиться только спокойный и уравновешенный человек, готовый постоянно быть на вторых ролях и выдержать ритм жизни взятый их второй половинкой.</p>
-					<p> При этом он должен быть готов терпеть непростой и властный характер холерика.</p>
+					<p>При этом он должен быть готов терпеть непростой и властный характер холерика.</p>
 				</div>
-				<h2 class="content-up-text">
+				<h2 class="ENG content-up-text">
+					Famous cholerics persons:
+				</h2>
+				<h2 class="UKR content-up-text">
+					Знамениті люди - холерики:
+				</h2>
+				<h2 class="RUS content-up-text">
 					Знаменитые люди - холерики:
-				</h2> 
-				<div class="content-main-text">
-					<p>Среди всемирно известных людей холериками являются 	и являлись (слева направо): </p>
-					<p>Опра Уинфри, Фил Макгроу, Дональд Трамп, Билл Гейтс, Пётр I Алексеевич, Александр Васильевич Суворов, Александр Сергеевич Пушкин, Дмитрий Иванович Менделеев.</p>
+				</h2>
+				<div class="ENG content-main-text">
+					<p>Among the world famous people, cholerics are and were (from left to right): </p>
+					<p>Oprah Winfrey, Phil McGrow, Donald Trump, Bill Gates, Peter I, Alexander Suvorov, Alexander Pushkin, Dmitry Ivanovich Mendeleev.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Серед всесвітньо відомих людей холерикими є і були (зліва направо): </p>
+					<p> Опра Вінфрі, Філ МакГроу, Дональд Трамп, Білл Гейтс, Петро І, Олександр Суворов, Олександр Пушкін, Дмитро Іванович Менделєєв.</p>
+				</div>
+				<div class="RUS content-main-text">
+					<p>Среди всемирно известных людей холериками являются и являлись (слева направо): </p>
+					<p>Опра Уинфри, Фил Макгроу, Дональд Трамп, Билл Гейтс, Пётр I, Александр Суворов, Александр Пушкин, Дмитрий Иванович Менделеев.</p>
 				</div>
 				<div class="content-image">	
-					<img src="img/choleric-people.jpg"	alt="Кто ты? Холерик?">
+					<img src="img/choleric-people.jpg" alt="Who are you? Choleric?">
 				</div>
 				<div class="content-main-bottom">					
-					<a target="_blank" href="test.html" class="content-main-button_link">
-					<span>Пройди тест</span>
+					<a href="test.html" class="content-main-button_link">
+						<span class="ENG">Pass the test</span>
+						<span class="UKR">Пройди тест</span>
+						<span class="RUS">Пройди тест</span>
 					</a>
 				</div>				
 			</div>
-			<div class="content-footer">
-				<p>Существуют ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
-			</div>
 		</div>	
+		<div class="footer">
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не будемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
+		</div>
 	</body>
+	<script type="text/javascript" src="js/js.js"></script>
 </html>

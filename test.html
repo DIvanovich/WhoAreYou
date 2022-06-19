@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Who are you? Choose a psychotype.</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	    <link rel="shortcut icon" href="favicon.ico">
+</head>
+        
+	<body>
+		<div class="content">
+            <select id="langChange">
+				<option value="EN" selected>EN</option>
+				<option value="UA">UA</option>
+				<option value="RU">RU</option>
+			</select>	
+            <a href="index.html" class="content-header-button_link">
+                <span class="ENG"> Home</span>
+                <span class="UKR"> На головну</span>
+                <span class="RUS"> На главную</span>
+            </a>		
+			<div class="content-up">
+                <div class="header_links">
+                    <div class="header-row">
+                        <div class="header_links_item">
+                            <a href="choleric-desc.html"><img src="img/choleric-icon.png" alt="Холерик, Кто ты?"></a>
+                        </div>
+                        <div class="header_links_item">
+                            <a href="phlegmatic-desc.html"><img src="img/phlegmatic-icon.png"></a>
+                        </div>
+                        <div class="header_links_item">
+                            <a href="melancholic-desc.html"><img src="img/melancholic-icon.png"></a>
+                        </div>
+                        <div class="header_links_item">
+                            <a href="sanguine-desc.html"><img src="img/sanguine-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="content-up-title">Who are You?</div>
+				<h1 class="ENG content-up-text">Now we'll know about everything :)</h1>
+                <h1 class="UKR content-up-text">Зараз ми про все дізнаємось :)</h1>
+                <h1 class="RUS content-up-text">Сейчас мы всё узнаем :)</h1>
+            </div>
+            <div class="content-text">
+                <h2 class="ENG content-up-text">
+                    Answer the Questions:
+                </h2>
+                <h2 class="UKR content-up-text">
+                    Позначте свої відповіді:
+                </h2>
+                <h2 class="RUS content-up-text">
+                    Обозначьте свои ответы на следующие вопросы:
+                </h2>
+            </div>    
+            <form name="mainForm" class="test" id="form-1" onsubmit="return checkSend(this)">
+                <div>
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="number" name="Age" placeholder="Enter Your Age" id="age" required >
+                </div>
+                <div class="question">
+                    <b>What do you like more?</b>
+                </div>
+                <div class="answers-block-grid">
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="Food" value="McDonalds" checked>
+                        <div class="answer-desc">
+                            <div>McDonalds</div>
+                            <div class="answer-image"><img src="img/mcdonalds.jpg" /></div>
+                        </div>              
+                    </label>
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="Food" value="Restaurant">
+                        <div class="answer-desc">              
+                            <div>Restaurant</div>
+                            <div class="answer-image"><img src="img/restaurant.jpg" /></div>
+                        </div>
+                    </label>   
+                </div>     
+                <div class="question">
+                    <b>Who is the best pet?</b>
+                </div>
+                <div class="answers-block-grid">
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="pet" value="Cat" checked>
+                        <div class="answer-desc">
+                            <div>Cat</div>
+                            <div class="answer-image"><img src="img/cat.jpg" /></div>
+                        </div>              
+                    </label>
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="pet" value="Dog">
+                        <div class="answer-desc">              
+                            <div>Dog</div>
+                            <div class="answer-image"><img src="img/Dog.jpg" /></div>
+                        </div>
+                    </label>   
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="pet" value="Snail">
+                        <div class="answer-desc">              
+                            <div>Snail</div>
+                            <div class="answer-image"><img src="img/Snail.jpg" /></div>
+                        </div>
+                    </label>           
+                </div> 
+                <div class="question">
+                    <b>What do you prefer to drink?</b>
+                </div>
+                <div class="answers-block-grid">
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="drink" value="Tea" checked>
+                        <div class="answer-desc">
+                            <div>Tea</div>
+                            <div class="answer-image"><img src="img/Tea.jpg" /></div>
+                        </div>              
+                    </label>
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="drink" value="Coffee">
+                        <div class="answer-desc">              
+                            <div>Coffee</div>
+                            <div class="answer-image"><img src="img/Coffee.jpg" /></div>
+                        </div>
+                    </label>   
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="drink" value="Juice">
+                        <div class="answer-desc">              
+                            <div>Juice</div>
+                            <div class="answer-image"><img src="img/Juice.jpg" /></div>
+                        </div>
+                    </label>  
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="drink" value="Beer">
+                        <div class="answer-desc">              
+                            <div>Beer</div>
+                            <div class="answer-image"><img src="img/Beer.jpg" /></div>
+                        </div>
+                    </label>           
+                </div> 
+                <div class="question"><b>What are you choosing for a walk?</b>
+                </div>
+                <div class="answers-block-grid">
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="move" value="Kedy" checked>
+                        <div class="answer-desc">
+                            <div>Kedy</div>
+                            <div class="answer-image"><img src="img/Kedy.jpg" /></div>
+                        </div>              
+                    </label>
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="move" value="Bike">
+                        <div class="answer-desc">              
+                            <div>Bike</div>
+                            <div class="answer-image"><img src="img/Bike.jpg" /></div>
+                        </div>
+                    </label>   
+                    <label class="answer">  
+                        <input class="answer-radio" type="radio" name="move" value="Keys">
+                        <div class="answer-desc">              
+                            <div>Auto</div>
+                            <div class="answer-image"><img src="img/auto.jpg" /></div>
+                        </div>
+                    </label>           
+                </div> 
+                <div>
+                    <input type="submit" class="content-main-button_link" value="Start" id="sendform">      
+                </div>
+            </form>
+            <div class="content-result">
+                <div class="content-up">
+                    <div class="content-up-title">Results:</div>
+                    <h3 class="content-up-text">
+                    </h3>	
+                    <div class="content-image">	
+                        <img class="TypeImg" src="img/sanguine-cat.jpg">
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-main-text">
+                        <p class="ResultHTML"></p>
+                    </div>
+                    <div class="content-image-mini">
+                        <img class="TypeImgMini" src="img/sanguine-cat.jpg">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="footer">
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не будемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
+		</div>        
+	</body>
+	<script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+</html>

@@ -1,55 +1,89 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html lang="en">
 	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>Кто ты? Выбирай себе психотип.</title>
-		<!-- Подключаем шрифт -->
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-		<!-- Подключаем CSS -->
+		<title>Who are you? Choose a psychotype.</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="favicon.ico">
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
-		<div class="content"> 
-			<div class="content-header">				
+		<div class="content"> 			
+			<div class="content-header">	
+				<select id="langChange">
+				<option value="EN" selected>EN</option>
+				<option value="UA">UA</option>
+				<option value="RU">RU</option>
+			</select>			
 			</div>
 			<div class="content-up">
-				<div class="content-up-title">Who are You?</div>
+				<div class="ENG content-up-title">Who are You?</div>
+				<div class="UKR content-up-title">А хто ти?</div>
+				<div class="RUS content-up-title">А кто ты?</div>
+				
 				<h1 class="content-up-text">
-					Интересно узнать кто есть кто? <br>	А еще интереснее понять, кто есть ты сам.
+					<span class="ENG">Wonder who is who?<br>And even more interesting to understand who you are yourself.</span> 
+					<span class="UKR">Цікаво дізнатись хто є хто?<br>А ще цікавіше дізнатись хто ти сам.</span> 
+					<span class="RUS">Интересно узнать кто есть кто?<br>А еще интереснее понять, кто есть ты сам.</span> 
 				</h1>	
+
 				<div class="content-image">	
 					<img src="img/Who-are-you.png"	alt="Кто ты?">
 				</div>
 			</div>
 			<div class="content-main">
-				<div class="content-main-text">
-					<p>Чем флегматик отличается от холерика и кем, например, лучше быть — меланхоликом или же сангвиником? А еще интереснее понять, кто есть ты сам. После этого начинаешь смотреть на мир другими глазами. Темперамент ведь определяет особенности поведения человека. </p>
-					<p>Это немного похоже на гороскоп, когда вы читаете про свой знак зодиака и находите сходство. Но тут все наоборот. </p>
-					<p>Нужно прочитать описание всех темпераментов и понять, к какому вы ближе всего (пройти простейший логический тест).</p>
+				<div class="ENG content-main-text">
+					<p>What phlegmatic differs from a choleric and who, for example, is better to be a melancholic or a sanguine? And even more interesting to understand who you are yourself. After that, you start to look at the world with other eyes. The temperament is determined by the features of human behavior. </p>
+					<p>This is a little bit like a horoscope when you read about your zodiac sign and find similarities. But here it's the opposite. </p>
+					<p>You need to read a description of all temperaments and understand how you are closest to (pass the simplest logical test).</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Чим флегматик відрізняється від холерика, та ким, наприклад, краще бути - меланхоліком чи сангвініком? А ще цікавіше зрозуміти, хто є ти. Після цього Ви починаєте дивитись на світ іншими очима. Зрештою, темперамент визначає характеристики поведінки людини.</p>
+					<p>Це трохи схоже на гороскоп, коли ви читаєте про свій знак зодіаку і знайдете схожість. Але тут все навпаки.</p>
+					<p>Вам потрібно прочитати опис усіх темпераментів і зрозуміти, до якого Ви найближче (пройти найпростіший логічний тест).</p>
+				</div>
+				<div class="RUS content-main-text">
+					<p>Чем флегматик отличается от холерика и кем, например, лучше быть — меланхоликом или же сангвиником? А еще интереснее понять, кто есть ты сам. После этого начинаешь смотреть на мир другими глазами. Темперамент ведь определяет особенности поведения человека.</p>
+					<p>Это немного похоже на гороскоп, когда вы читаете про свой знак зодиака и находите сходство. Но тут все наоборот.</p>
+					<p>Нужно прочитать описание всех темпераментов и понять, к какому Вы ближе всего (пройти простейший логический тест).</p>
 				</div>
 				<div class="content-main-bottom">
 					<ul class="content-main-links">
-						<li><a href="choleric-desc.html"><span>неуравновешенный и вспыльчивый</span></a></li>
-						<li><a href="phlegmatic-desc.html"><span>спокойный, неспешный, невозмутимый</span></a></li>
-						<li><a href="melancholic-desc.html"><span>впечатлительный и ранимый</span></a></li>
-						<li><a href="sanguine-desc.html"><span>живой, подвижный и веселый</span></a></li>
+						<li><a href="choleric-desc.html">
+								<span class="ENG">unbalanced and hot-tempered</span>
+								<span class="UKR">неврівноважений та гарячий</span>
+								<span class="RUS">неуравновешенный и вспыльчивый</span>
+							</a></li>
+						<li><a href="phlegmatic-desc.html">
+								<span class="ENG">calm, unhurried, imperturbable</span>
+								<span class="UKR">спокійний, неспішний, незрозумілий</span>
+								<span class="RUS">спокойный, неспешный, невозмутимый</span>
+							</a></li>
+						<li><a href="melancholic-desc.html">
+								<span class="ENG">impressionable and vulnerable</span>
+								<span class="UKR">вразливий та ранимий</span>
+								<span class="RUS">впечатлительный и ранимый</span>
+							</a></li>
+						<li><a href="sanguine-desc.html">
+								<span class="ENG">active, movable and cheerful</span>
+								<span class="UKR">живий, активний та веселий</span>
+								<span class="RUS">живой, подвижный и веселый</span>
+							</a></li>
 						<div class="content-main-bottom-image"><span> </span>						
 						</div>
 					</ul>
-					<a target="_blank" href="test.html" class="content-main-button_link">
-					<span>Пройди тест</span>
+					<a href="test.html" class="content-main-button_link">
+						<span class="ENG">Pass the test</span>
+						<span class="UKR">Пройди тест</span>
+						<span class="RUS">Пройди тест</span>
 					</a>
 				</div>
 			</div>
-			<div class="content-footer">
-				<p>Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
-			</div>
 		</div>
-	</body>
+		<div class="footer">
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не будемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
+		</div>		
+	</body>	<script type="text/javascript" src="js/js.js"></script>
 </html>

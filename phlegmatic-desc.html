@@ -1,35 +1,31 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<html>
 	<head>
-		<!-- Заголовок страницы в браузере -->
-		<title>Флегматик. А кто ты? Выбирай себе психотип.</title>
-		<!-- Подключаем шрифт -->
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-		<!-- Подключаем CSS -->
+		<title>Phlegmatic, Who are you?</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<!-- Кодировка страницы -->
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<link rel="shortcut icon" href="favicon.ico">
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
 		<div class="content"> 
-			<div class="header">
-				<div class="content-header">					
-					<a href="index.html" class="content-header-button_link">
-						<span>На главную</span>
-					</a>
-				</div>	
-			</div>
+			<select id="langChange">
+				<option value="EN" selected>EN</option>
+				<option value="UA">UA</option>
+				<option value="RU">RU</option>
+			</select>						
+			<a href="index.html" class="content-header-button_link">
+				<span class="ENG"> Home</span>
+				<span class="UKR"> На головну</span>
+				<span class="RUS"> На главную</span>
+			</a>	
 			<div class="header_links">
 				<div class="header-row">
 					<div class="header_links_item">
-						<a href="choleric-desc.html"><img src="img/choleric-icon.png" </a>
+						<a href="choleric-desc.html"><img src="img/choleric-icon.png"></a>
 					</div>
 					<div class="header_links_item">
-						<a href="phlegmatic-desc.html"><img src="img/phlegmatic-icon.png" style="opacity: 100%" alt="Флегматик, Кто ты?"></a>
+						<a href="phlegmatic-desc.html"><img src="img/phlegmatic-icon.png" style="opacity: 100%" alt="Phlegmatic, Who are you?"></a>
 					</div>
 					<div class="header_links_item">
 						<a href="melancholic-desc.html"><img src="img/melancholic-icon.png"></a>
@@ -41,15 +37,25 @@
 			</div>
 			<div class="content-up">
 				<div class="content-up-title">Phlegmatic?</div>
-				<h1 class="content-up-text">
-					Темперамент спокойный, неспешный, невозмутимый...
-				</h1>	
+				<h1 class="ENG content-up-text">Calm, unhurried, imperturbable...</h1>	
+				<h1 class="UKR content-up-text">Спокійний, неспішний, незрозумілий...</h1>
+				<h1 class="RUS content-up-text">Темперамент спокойный, неспешный, невозмутимый...</h1>
 				<div class="content-image">	
-					<img src="img/brain.jpg"	alt="Кто ты? Флегматик?">
+					<img src="img/brain.jpg" alt="Phlegmatic, Who are you?">
 				</div>
 			</div>
 			<div class="content-main">
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>Phlegmatic is the personality of the analytical warehouse of the mind.</p>
+					<p>Their distinctive feature is slowness and equanimity in any situation, they speak little and usually try to hide their emotions.</p>
+					<p>Due to the incredibly slow speed of their reaction, phlegmatic people very often seem letting, always tired or even unwilling to fulfill some requests of the chiefs.</p>	
+				</div>
+				<div class="UKR content-main-text">
+					<p>Флегматик - це особистість аналітичного складу розуму.</p>
+					<p>їх відмінна особливість повільныість і рівномірність у будь -якій ситуації, вони говорять мало і зазвичай намагаються приховати свої емоції.</p>					
+					<p>Через неймовірно повільну швидкість їх реакції, флегматичні дуже часто здаються, що завжди дають, завжди втомлюються або навіть не бажають виконувати деякі запити влади.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Флегматик - это личность аналитического склада ума. </p>
 					<p>Их отличительная черта – это медлительность и невозмутимость в любой ситуации, они мало говорят и обычно пытаются скрыть свои эмоции.</p>
 					<p>Из-за невероятно медленной скорости их реакции флегматики очень часто кажутся вялыми, вечно уставшими или даже нежелающими выполнить какие-то просьбы начальства.</p>	
@@ -57,29 +63,56 @@
 				<div class="content-image">	
 				<img src="img/phlegmatic-desc.jpg"	alt="Кто ты? Флегматик?">
 				</div>
-				<div class="content-main-text">
+				<div class="ENG content-main-text">
+					<p>It is not surprising that it is very difficult for them to make new friends. They converge with new people for a long time and are very difficult to make contact. However, if they begin to be friends with someone, then they do it sincerely, and their friendship lasts until their death. </p>
+					<p>We can say that more reliable friends than phlegmaticians are difficult to find.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Не дивно, що їм дуже важко завести нових друзів. Вони тривалий час сходяться з новими людьми і їм дуже важко налагодити контакт. Однак якщо вони почнуть дружити з кимось, то зробить це щиро, і їх дружба триватиме до їх смерті.</p>
+					<p>Можна сказати, що більш надійних друзів, ніж флегматиків, важко знайти.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Не удивительно, что им очень трудно завести новых друзей. Они долго сходятся с новыми людьми и очень трудно идут на контакт. Однако, если они начинают дружить с кем-либо, то делают это искренне, а их дружба длится до самой смерти.</p>
 					<p> Можно сказать, что более надёжных друзей, чем флегматики найти трудно.</p>
 				</div>
-				<h2 class="content-up-text">
+				<h2 class="ENG content-up-text">
+					Famous phlegmatic persons:
+				</h2>
+				<h2 class="UKR content-up-text">
+					Відомі люди - Флегматики:
+				</h2>
+				<h2 class="RUS content-up-text">
 					Знаменитые люди - Флегматики:
-				</h2> 
-				<div class="content-main-text">
+				</h2>
+				<div class="ENG content-main-text">
+					<p>There were a lot of talented people, and is phlegmaticians, they were able to overcome themselves and their character (from left to right):</p>
+					<p>Galileo Galileo; Anthony van Levenguk; Immanuel Kant; Mikhail Kutuzov; Ivan Krylov; Alexander Lyubishchev.</p>
+				</div>
+				<div class="UKR content-main-text">
+					<p>Було багато талановитих людей, і це флегматики, вони змогли подолати себе та свого характеру (зліва направо): </p>
+					<p>Галілей Галілео; Ентоні Ван Левенгук; Іммануель Кант; Михайл Кутузов; Іван Крилов; Олександр Любищев.</p>
+				</div>
+				<div class="RUS content-main-text">
 					<p>Очень много талантливых людей было, и является флегматиками, они смогли перебороть себя и свой характер (слева направо): </p>
 					<p>Галилео Галилей; Антони ван Левенгук; Иммануил Кант; Михаил Илларионович Кутузов; Иван Андреевич Крылов; Александр Александрович Любищев.</p>
 				</div>
 				<div class="content-image">	
-					<img src="img/phlegmatic-people.jpg"	alt="Кто ты? Холерик?">
+					<img src="img/phlegmatic-people.jpg" alt="Phlegmatic, Who are you?">
 				</div>
 				<div class="content-main-bottom">					
-					<a target="_blank" href="test.html" class="content-main-button_link">
-					<span>Пройди тест</span>
+					<a href="test.html" class="content-main-button_link">
+						<span class="ENG">Pass the test</span>
+						<span class="UKR">Пройди тест</span>
+						<span class="RUS">Пройди тест</span>
 					</a>
 				</div>				
 			</div>
-			<div class="content-footer">
-				<p>Существуют ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
-			</div>
 		</div>	
+		<div class="footer">
+			<p class="ENG">There are also other types of personality, but we will not consider them, because Our task is to entertain you, and not to establish a diagnosis :).</p>
+			<p class="UKR">Взагалі-то є ще інші типи особистості, але ми їх не будемо розглядати, тому що наша задача не встановити діагноз, а просто вас трохи розважити :).</p>
+			<p class="RUS">Есть ещё и другие типы личности, но мы их рассматривать не будем, т.к. наша задача Вас развлечь, а не установить диагноз :).</p>
+		</div>
 	</body>
+	<script type="text/javascript" src="js/js.js"></script>
 </html>

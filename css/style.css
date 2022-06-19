@@ -18,8 +18,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 body{
 	background-color: #e8e8e8;
-	font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;  
+	font-family: Roboto Mono, "Helvetica Neue", Helvetica, sans-serif;  
 }
+
 a {
 	color: #80b7b3;
 }
@@ -29,17 +30,58 @@ h2{
 	padding: 35px;
 }
 
+/*------------------
+hr {
+	margin: 10px;
+    border: none;
+    height: 2px;
+    background-image: linear-gradient(to right, #e8e8e8, #80b7b3, #e8e8e8);
+}
+--*/
+
+#langChange {
+	display: inline-block;
+	right: 0px;
+	position: absolute;
+	padding: 10px 10px ;
+	margin: 20px 0px;
+	background-color:#80b7b3;
+	transition-duration: 0.4s;
+	border-radius: 20px;
+	box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+}
+
+#langChange:hover {
+	background-color:#41a0a1;
+}
+
+form {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	max-width:850px;
+}
+
 .content {
 	padding: 0 0 135px 0;
 	max-width: 850px;
 	margin: 0px auto;
+	position: relative;
 }
 
 .content-header{
 	position: relative;
 	text-align: left;
-	margin: 0px 0px 0px 0px;
-	padding: 20px 0px 80px 0;
+	padding: 0px 0px 80px 0;
 }
 
 .header-row{
@@ -49,7 +91,7 @@ h2{
 	flex-wrap: nowrap;
 	max-width: 500px;
 	height: 120px;
-	margin: 25px;
+	margin: 55px 25px 25px 25px;
 }
 
 .header_links{
@@ -61,13 +103,41 @@ h2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-/*	flex: 0, 0, 130px;*/
 	width:130px;
+}
+
+.header_links_item:nth-child(1) img {
+	animation: header_links_in 0.3s ease-in-out 1 alternate 1.3s none;
+}
+
+.header_links_item:nth-child(2) img {
+	animation: header_links_in 0.3s ease-in-out 1 alternate 1.4s none;
+}
+
+.header_links_item:nth-child(3) img {
+	animation: header_links_in 0.3s ease-in-out 1 alternate 1.5s none;
+}
+
+.header_links_item:nth-child(4) img {
+	animation: header_links_in 0.3s ease-in-out 1 alternate 1.6s none;
+}
+
+@keyframes header_links_in{
+	0% {
+		width: 100px;
+	}
+	50%{
+		width: 120px;
+	}
+	100%{
+		width: 100px;
+	}
 }
 
 .header_links_item img{
 	width: 100px;
 	opacity: 50%;
+	transition-duration: 0.3s;
 }
 
 .header_links_item img:hover{
@@ -83,7 +153,7 @@ h2{
 	opacity: 0.6;
 	color: #273d46;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
 	padding: 20px;
@@ -91,14 +161,14 @@ h2{
 
 .content-up-text {
 	color: #273d46;
-	font-size: 30px;
+	font-size: 26px;
 	line-height: 50px;
-	padding: 0px 0px 35px 0px;
+	padding: 25px 0px 35px 0px;
 }
 
-.content-main {
+.content-main, .content-result {
 	color: #273d46;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .content-image {
@@ -107,15 +177,15 @@ h2{
 }
 
 .content-image img{
-	max-width: 850px;
+	max-width: 100%;
 }
 
 .content-main-text p{
-	margin: 0px 0px 20px 0px;
+	margin: 10px 0px 20px 10px;
 }
 
-.content-main-text p:last-child{
-	margin: 0px 0px 35px 0px;
+.content-main-text p{
+	margin: 10px 0px 35px 10px;
 }
 
 .content-main-bottom {
@@ -132,21 +202,25 @@ h2{
 
 .content-main-links {
 	margin: 15px 20px 20px 0px;
+	height: 255px;
+
 }
 
 .content-main-links li{
-
-	margin: 25px 15px 25px 10px;
+	height: 65;
+	margin: 0px 15px 0px 10px;
 	background: url('../icons/check-lens.png') left no-repeat;
 	-moz-background-size: 4%; /* Firefox 3.6+ */
    	-webkit-background-size: 4%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 4%; /* Opera 9.6+ */
     background-size: 4%; /* Современные браузеры */
-	padding: 5px 15px 5px 40px;
+	padding: 20px 15px 20px 40px;
+
 }
 
 .content-main-links li:hover{
-	background: url('../icons/check-lens-mini.png') 0 100% no-repeat;
+	top: -20px;
+	background: img src="img/check-lens.png" 0 100% no-repeat;
 	font-size: 30px;
 	-moz-background-size: 5%; /* Firefox 3.6+ */
    	-webkit-background-size: 5%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -175,7 +249,7 @@ h2{
 	display: inline-block;
 	padding: 0px 30px;
 	height: 44px;
-	background-color:#80b7b3;
+	background-color:#80b7b3; 
 	border-radius: 20px;
 	box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
@@ -186,6 +260,11 @@ h2{
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
+	transition-duration: 0.4s;
+}
+
+.content-header-button_link{
+	margin: 20px 0px 0px 0px;
 }
 
 .content-main-button_link span{
@@ -209,13 +288,218 @@ h2{
 	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
-.content-footer{
+
+.answers-block-grid *,
+.answers-block-grid *:after {
+    box-sizing: border-box;
+}
+.answers-block-grid {
+	display: inline-grid;
+	grid-template-columns: repeat(4, auto);
+	grid-area: side;
+    box-sizing: border-box;
+    grid-gap: 20px;
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 0;
+	text-align: center;
+}
+
+.answer {
+	align-items: center;
+
+    position: relative;
+	width: 140px;
+	/*border: 2px solid #BFE2FF;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+*/
+}
+
+/*.answer:hover {
+    border-color: #337AB7;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+*/ 
+
+.answer-radio:checked ~ .answer-desc {
+	border-color: #2f7172;
+}
+
+
+.answer-desc {
+	/*color: #337AB7; padding-right: 52px;
+    line-height: 24px;
+	
+	*/
+	display: grid;
+	grid-template-rows: 40px auto;
+	align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    position: relative;
+	width: 140px;
+	border: 2px solid #80b7b3;
+    
+}
+
+.answer-desc:hover {
+	border-color: #2f7172;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.answer-radio{
+	z-index: 1;
+    margin: 0;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.answer-image{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+	margin: 0px 0px 40px 0px;
+	
+}
+
+/*.answer-image {
+    ;
+    position: relative;
+    left: -16px;
+    margin: 14px 0;
+    width: calc(25% + 15px);
+    
+} */
+.answer-image img {
+    width: 100%;
+    transition: transform 0.5s ease-out;
+	object-fit: cover;
+	min-height: 100px;
+}
+
+
+.answer-radio:checked {
+    border-color: #2f7172;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .answer-radio {
+		display: inline-block;
+		position: relative;;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: #fff;
+        border: 3px solid #80b7b3;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 20px;
+        width: 20px;   
+        outline: none;
+        transition: background 0.2s ease-out, border-color 0.2s ease-out;
+		top: 175px;
+		left: 0px;
+    }
+    .answer-radio::after {
+        border: 3px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        content: '';
+        display: block;
+        height: 12px;
+        left: 5%;
+        position: relative;
+        top: 80%;
+        transform: rotate(45deg) translate(-80%, -80%);
+        width: 7px;
+    }
+    .answer-radio:checked {
+        background: #41a0a1;
+        border-color: #41a0a1;
+    }
+     
+    .answer:hover .answer-radio {
+        border-color: 3px #2f7172;
+    }
+    .answer:hover .answer-radio:checked {
+        border-color: 3px #2f7172;
+    }
+}
+
+.answer:hover .answer-image img,
+.answer-radio:checked {
+    transform: scale(1.2);
+}
+
+.footer {
 	top: -23px;
 	opacity: 0.6;
 	color: #273d46;
 	font-size: 14px;
 	letter-spacing: 2px;
-	padding: 35px 0px 0px 0px;
+	padding: 35px 10px 25px 10px;
+	max-width: 850px;
+	margin: 0px auto;
+	text-align: left;
 }
 
+.test {
+	padding: 15px 0;
+	float: center;
+}
 
+.test input:last-child{
+	margin: 15px 0px 15px 10px;
+}
+
+.question {
+	margin: 20px 0px 10px 0px;
+	
+}
+.test input[type="text"],
+.test input[type="number"] {
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	outline: none;
+}
+
+.content-result {
+	display: none; /*for display results tests*/
+	text-align: center;
+}
+
+.content-image-mini{
+	padding: 0px 0px 35px 0px;
+	text-align: center;
+	}
+
+.content-image-mini img{
+	max-height: 150px;
+}
+
+.ENG {
+	display: inherit;
+}
+
+.RUS {
+	display: none;
+}
+
+.UKR {
+	display: none;
+}
+
+ /*---------- Just Do It:
+ put in changer languages -
+  	1) - can add massive in JS, Replace by innerHTML
+
+ add checker input name
+ try use distruct in data from test form  
+ try use Event
+
+ -------------*/

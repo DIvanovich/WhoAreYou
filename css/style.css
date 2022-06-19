@@ -496,12 +496,8 @@ form {
 
  /*---------- Just Do It:
  put in changer languages -
-  	1) - Add massive in JS, Replace by innerHTML
-	2) - Add span to all texts for change, in JS add cycle for find All spans, => classes display:none.
-	* if need change <html lang="en"> => can use outerHTML
+  	1) - can add massive in JS, Replace by innerHTML
 
-
- create styles for radio's in form with the pictures ^
  add checker input name
  try use distruct in data from test form  
  try use Event

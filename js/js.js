@@ -20,8 +20,9 @@ function changeLangData (){
     let langHash = window.location.hash;    
     console.log(langHash);
     langHash=langHash.substr(1);
-    if (!selectLangAll.includes(langHash)){
+    if (!selectLangAll.includes(langHash)){        
         location.href = window.location.pathname + '#EN';
+        location.reload();
     };
     console.log(langHash);
     let langEng = document.querySelectorAll('.ENG');

@@ -24,9 +24,10 @@ function checkSend (el) {
     let TemperHtml = "";
     let ResultsHtml_1;
 
-   // selectLangValue=substr(0).langHash;
-    //console.log(selectLangValue);
-
+    selectLangValue=selectLang.value;
+    console.log(selectLangValue);
+   // console.log(langHash);
+   
     switch (selectLangValue){
         case "EN":
             ResultsHtml_1 = "<p><b>Dear, " + ResultsData.name + "!</b></p>";

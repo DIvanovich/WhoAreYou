@@ -1,25 +1,29 @@
 //******Langueges*****//
 
 let selectLang = document.getElementById("langChange");
-let selectLangValue = selectLang.value;
 const selectLangAll = ['EN', 'UA', 'RU']
 selectLang.addEventListener('change', changeLang);
 
-
-changeLangData ();
+changeLangData();
 
 function changeLang (){
     let lang = selectLang.value;
     location.href = window.location.pathname + "#" + lang;
+    localStorage.setItem("lang", lang);
     changeLangData ();
     location.reload();
-    
 }
 
 function changeLangData (){
-    let langHash = window.location.hash;    
-    console.log(langHash);
-    langHash=langHash.substr(1);
+
+
+    let langHash = window.location.hash;
+    let langLocalStorage = localStorage.getItem('lang');
+    console.log(langLocalStorage+' langLocalStorage');
+    console.log(langHash+' lang hash from window');
+    langHash = (langLocalStorage) ? langLocalStorage : langHash.substr(1);
+    console.log(langHash+' after compare');
+
     if (!selectLangAll.includes(langHash)){        
         location.href = window.location.pathname + '#EN';
         location.reload();
@@ -53,18 +57,13 @@ function changeLangData (){
                 langRus[i].style.display = "inherit";
               }
             break;    
-        
     }
 
     for (i = 0; i < LangLinks.length; i++) {
         let link = LangLinks[i].href;
-        // console.log(link);
-        LangLinks[i].href = link+'#'+langHash;
-        // console.log(LangLinks[i].href);
-        // console.log(langHash);                
+        LangLinks[i].href = link+'#'+langHash;              
     } 
+    
     selectLang.value = langHash;
 
-   // return selectLangValue = langHash;
-    
 }
